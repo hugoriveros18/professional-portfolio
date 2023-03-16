@@ -1,0 +1,31 @@
+.skills-bar__general-container {
+    display: flex;
+    width: 100%;
+}
+
+.skills-bar__title {
+    width: 30%;
+}
+
+.skills-bar__title  h4{
+    text-align: center;
+    padding: 8px 5px;
+    font-weight: 800;
+    font-size: 12px;
+    color: var(--light-color);
+    background-color: var(--dark-blue-color);
+}
+
+.skills-bar__bar-graph {
+    width: 70%;
+    background-color: var(--light-blue-color);
+    overflow: hidden;
+}
+
+.skills-bar__bar-graph div {
+    width: 100%;
+    height: 100%;
+    background-color: var(--medium-blue-color);
+    transform: translateX(-100%);
+    transition: all 1.4s;
+}
