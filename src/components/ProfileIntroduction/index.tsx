@@ -9,10 +9,10 @@ const ProfileIntroduction = forwardRef((props, ref: any) => {
     return (
         <div
             className={`about-me__container`}
-            ref={ref}
         >
             <div
                 className={`about-me__welcome-message`}
+                ref={ref}
             >
                 <h3>¡Hi, I'm Hugo! Thanks for being here.</h3>
                 <p>Since I started my journey as a developer I am constantly amazed by the impact of technology around the world, that's one of the reasons why I love my profession and keep learning to develop software that positively impacts other people's lives. I am a frontend developer committed to creating high quality applications, mainly with experience in e-commerce development, focused on results and happy customers.</p>

@@ -36,7 +36,6 @@ const SkillsResume = () => {
                                 <SkillsBarGraph
                                     title={skill.title}
                                     skillPercentage={skill.skillPercentage}
-                                    isGraphBarsContainerVisible={isGraphBarsContainerVisible}
                                 />
                             )
                         })
