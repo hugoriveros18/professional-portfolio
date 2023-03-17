@@ -1,0 +1,27 @@
+.about-me__container {
+    width           : 100%;
+    padding         : 80px 25px 120px;
+    background-color: var(--dark-blue-color);
+}
+
+.about-me__welcome-message {
+    display       : flex;
+    flex-direction: column;
+    gap           : 25px;
+    transition    : all 1.5s;
+}
+
+.about-me__welcome-message h3 {
+    font-size  : 20px;
+    font-weight: 600;
+    color      : var(--light-color);
+    text-align : center;
+    line-height: 1.125;
+}
+
+.about-me__welcome-message p {
+    font-size  : 20px;
+    color      : var(--light-color);
+    text-align : center;
+    line-height: 1.6;
+}

@@ -1,0 +1,54 @@
+.current-job__general-container {
+    width: 100%;
+}
+
+.current-job__internal-container {
+    width           : 85%;
+    margin          : 0 auto 20px;
+    background-color: var(--light-color);
+    border-radius   : 5px;
+    transform       : translate(90%, 0);
+    opacity         : 0;
+    transition      : all 1.5s;
+    border          : 1px solid var(--medium-blue-color);
+}
+
+.current-job__visible {
+    transform: translate(0, 0);
+    opacity  : 1;
+}
+
+.current-job__company-logo {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    width          : 100px;
+    height         : 100px;
+    margin         : 25px auto;
+    padding        : 5px;
+    border-radius  : 50%;
+    background     : linear-gradient(90deg, #AD1AC7 0.22%, #FA2080 43.67%, #FF943F 96.47%);
+}
+
+.current-job__internal-container h3 {
+    margin-bottom: 15px;
+    font-size    : 22px;
+    font-weight  : 600;
+    text-align   : center;
+    color        : var(--light-red-color);
+}
+
+.current-job__internal-container p {
+    text-align: center;
+    font-size : 17px;
+    padding   : 0px 24px;
+    color     : var(--dark-blue-color);
+}
+
+.current-job__functions {
+    display       : flex;
+    flex-direction: column;
+    gap           : 10px;
+    margin        : 15px 0 30px;
+    padding       : 0px 10px 0 30px;
+}
