@@ -1,5 +1,6 @@
 .current-job__general-container {
     width: 100%;
+    overflow: hidden;
 }
 
 .current-job__internal-container {
