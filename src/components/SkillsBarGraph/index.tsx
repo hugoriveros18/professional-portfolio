@@ -11,7 +11,7 @@ const SkillsBarGraph = ({ title, skillPercentage, isGraphBarsContainerVisible }:
                 <h4>{title}</h4>
             </div>
             <div className={`skills-bar__bar-graph`}>
-                <div style={isGraphBarsContainerVisible ? { translate: skillPercentage } : {}}></div>
+                <div style={isGraphBarsContainerVisible ? { width: skillPercentage } : {width: "0%"}}></div>
             </div>
         </div>
     )
