@@ -3,14 +3,6 @@ import './styles.css';
 
 const SkillsBarGraph = ({ title, skillPercentage, isGraphBarsContainerVisible }: SkillBarGraphProps) => {
 
-    //STATES
-    const [firstRender, setFirstRender] = useState<boolean>(false);
-
-    //EFFECTS
-    useEffect(() => {
-        setFirstRender(true);
-    }, [])
-
     //JSX
     return (
         <div
