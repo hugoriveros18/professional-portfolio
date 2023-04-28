@@ -1,0 +1,22 @@
+.description-text {
+    text-align: start !important;
+    padding: 0 !important;
+    transition: all 1200ms;
+}
+
+.description-text::before {
+    content: "\2022";
+    margin-right: 5px;
+}
+
+.description-text-odd {
+    transform: translateX(300%);
+}
+
+.description-text-even {
+    transform: translateX(-300%);
+}
+
+.description-visible {
+    transform: translateX(0%);
+}

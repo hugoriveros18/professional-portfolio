@@ -25,5 +25,5 @@
 .skills-bar__bar-graph div {
     height: 100%;
     background-color: var(--medium-blue-color);
-    transition: all 1.4s;
+    transition: all 1200ms;
 }

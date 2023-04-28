@@ -1,7 +1,9 @@
 import React, { useRef } from "react";
 import { jobFunctions, visibilityOptions } from "../../definitions/profileVariables";
-import './styles.css';
 import useElementOnScreen from "../../hooks/useElementOnScreen";
+import ItGlobersLogo from '../../assets/itglobers-logo.svg';
+import './styles.css';
+import ProfileDescription from "../ProfileDescription";
 
 const CurrentJob = () => {
 
@@ -21,15 +23,19 @@ const CurrentJob = () => {
                 className={`current-job__internal-container ${currentJobVisible && 'current-job__visible'}`}
             >
                 <div className={`current-job__company-logo`}>
-                    <img alt='ITGlobers Logo' src="https://itglobers.com/assets/img/itglobers-logo.svg" />
+                    <img alt='ITGlobers Logo' src={ItGlobersLogo} />
                 </div>
                 <h3>IT Globers - Current Job</h3>
                 <p>I currently work at IT Globers, a software development company specializing in e-commerce. Some of the main responsibilities I have are:</p>
                 <ul className={`current-job__functions`}>
                     {
-                        jobFunctions.map((assigment,index) => {
+                        jobFunctions.map((assignment,index) => {
                             return(
-                                <li>{assigment}</li>
+                                <ProfileDescription
+                                    key={index}
+                                    assignment={assignment}
+                                    index={index}
+                                />
                             )
                         })
                     }

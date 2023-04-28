@@ -8,7 +8,6 @@ const useElementOnScreen = (options:any, containerRef: React.MutableRefObject<an
 
     //METHODS
     const setSectionVisibility = (entries:any) => {
-        console.log(entries);
         const [entry] = entries;
         setIsVisible(entry.isIntersecting);
         if(!freezeElement && entry.isIntersecting) {

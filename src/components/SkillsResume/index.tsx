@@ -26,15 +26,16 @@ const SkillsResume = () => {
                     <img alt='Frontend Icon' src={FrontendIcon} />
                 </div>
                 <h3>Fronted Developer</h3>
-                <p>I enjoy developing web applications with a friendly experience. These are some of the technologies that I use on a daily basis:</p>
+                <p>I enjoy developing web applications with a friendly experience. These are some of the main technologies that I use on a daily basis:</p>
                 <div className={`skills__bar-graphs`}>
                     {
-                        profileSkills.map((skill) => {
+                        profileSkills.map((skill, index) => {
                             return (
                                 <SkillsBarGraph
                                     title={skill.title}
                                     skillPercentage={skill.skillPercentage}
                                     isGraphBarsContainerVisible={isSkillsContainerVisible}
+                                    key={index}
                                 />
                             )
                         })

@@ -1,6 +1,6 @@
 .about-me__container {
     width           : 100%;
-    padding         : 80px 25px 120px;
+    padding         : 60px 25px 120px;
     background-color: var(--dark-blue-color);
 }
 
@@ -24,4 +24,15 @@
     color      : var(--light-color);
     text-align : center;
     line-height: 1.6;
+}
+
+.profile-text__general {
+    transform: translateY(200px);
+    opacity: 0;
+    transition: all 1500ms;
+}
+
+.profile-text__visible {
+    transform: translateY(0px);
+    opacity: 1;
 }
