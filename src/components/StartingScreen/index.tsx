@@ -13,7 +13,7 @@ const StartingScreen = ({scrollToRef}:StartingScreenProps) => {
     const [firstRender, setFirstRender] = useState<boolean>(false);
 
     //REFERENCES
-    const welcomePhrase = useRef<string>('In Love With Frontend Software Development');
+    const welcomePhrase = useRef<string>('In Love With Software Development');
 
     //EFFECTS
     useEffect(() => {
