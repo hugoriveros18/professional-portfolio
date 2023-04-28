@@ -41,6 +41,7 @@
 
 .current-job__internal-container p {
     text-align: center;
+    font-weight: 600;
     font-size : 17px;
     padding   : 0px 24px;
     color     : var(--dark-blue-color);
@@ -49,8 +50,8 @@
 .current-job__functions {
     display       : flex;
     flex-direction: column;
-    gap           : 20px;
-    margin        : 35px 0 30px;
+    gap           : 10px;
+    margin        : 25px 0 30px;
     padding       : 0px 20px;
     list-style: none;
 }

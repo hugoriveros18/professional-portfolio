@@ -1,12 +1,15 @@
 .description-text {
+    display: flex;
     text-align: start !important;
     padding: 0 !important;
+    font-size: 15px !important;
+    font-weight: 400 !important;
     transition: all 1200ms;
 }
 
 .description-text::before {
     content: "\2022";
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 .description-text-odd {
