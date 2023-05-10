@@ -1,9 +1,10 @@
 import React, { useRef } from 'react';
-import './App.css';
 import StartingScreen from './components/StartingScreen';
 import ProfileIntroduction from './components/ProfileIntroduction';
 import SkillsResume from './components/SkillsResume';
 import CurrentJob from './components/CurrentJob';
+import './App.css';
+import MyProjects from './components/MyProjects';
 
 function App() {
 
@@ -27,12 +28,15 @@ function App() {
 
       {/* PROFILE INTRODUCTION */}
       <ProfileIntroduction ref={firstSectionRef}/>
+      <div className={`skills-job__container`}>
+        {/* SKILLS RESUME*/}
+        <SkillsResume/>
 
-      {/* SKILLS RESUME*/}
-      <SkillsResume/>
+        {/* CURRENT JOB */}
+        <CurrentJob/>
+      </div>
 
-      {/* CURRENT JOB */}
-      <CurrentJob/>
+      <MyProjects />
 
     </div>
   );

@@ -55,3 +55,33 @@
     padding       : 0px 20px;
     list-style: none;
 }
+
+@media screen and (min-width: 768px) {
+    .current-job__internal-container {
+        width: 60%;
+    }
+
+    .current-job__company-logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .current-job__internal-container h3 {
+        font-size: 25px;
+    }
+
+    .current-job__internal-container p {
+        font-size: 19px;
+    }
+
+    .current-job__functions {
+        padding: 0 30px;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .current-job__internal-container {
+        min-height: 764px;
+    }
+}

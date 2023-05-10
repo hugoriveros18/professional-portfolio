@@ -5,7 +5,7 @@ import FrontendIcon from '../../assets/coding.png';
 import SkillsBarGraph from "../SkillsBarGraph";
 import './styles.css';
 
-const SkillsResume = () => {
+export default function SkillsResume() {
 
     //REFERENCES
     const skillsContainerRef = useRef<any>(null);
@@ -45,5 +45,3 @@ const SkillsResume = () => {
         </div>
     )
 }
-
-export default SkillsResume;

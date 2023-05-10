@@ -3,7 +3,7 @@ import './styles.css';
 import useElementOnScreen from "../../hooks/useElementOnScreen";
 import { visibilityOptions } from "../../definitions/profileVariables";
 
-const SkillsBarGraph = ({ title, skillPercentage }: SkillBarGraphProps) => {
+export default function SkillsBarGraph ({ title, skillPercentage }: SkillBarGraphProps) {
 
     //REFERENCES
     const graphBarsContainerRef = useRef<any>(null);
@@ -26,5 +26,3 @@ const SkillsBarGraph = ({ title, skillPercentage }: SkillBarGraphProps) => {
         </div>
     )
 }
-
-export default SkillsBarGraph;

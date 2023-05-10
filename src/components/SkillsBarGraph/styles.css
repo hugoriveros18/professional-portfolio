@@ -27,3 +27,9 @@
     background-color: var(--medium-blue-color);
     transition: all 1200ms;
 }
+
+@media screen and (min-width: 768px) {
+    .skills-bar__title h4 {
+        font-size: 16px;
+    }
+}

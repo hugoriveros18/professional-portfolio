@@ -9,3 +9,11 @@
   --dark-blue-color  : #1d3557;
   --light-red-color  : #e63946;
 }
+
+@media screen and (min-width: 1024px) {
+  .skills-job__container {
+    display   : flex;
+    max-width : 1280px;
+    margin: -60px auto 0;
+  }
+}

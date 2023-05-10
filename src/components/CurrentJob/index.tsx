@@ -5,7 +5,7 @@ import ItGlobersLogo from '../../assets/itglobers-logo.svg';
 import './styles.css';
 import ProfileDescription from "../ProfileDescription";
 
-const CurrentJob = () => {
+export default function CurrentJob() {
 
     //REFERENCES
     const currentJobRef = useRef<any>(null);
@@ -44,5 +44,3 @@ const CurrentJob = () => {
         </div>
     )
 }
-
-export default CurrentJob;

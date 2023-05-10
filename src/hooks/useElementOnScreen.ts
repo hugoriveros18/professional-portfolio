@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const useElementOnScreen = (options:any, containerRef: React.MutableRefObject<any>, intersectionOnce: boolean) => {
+export default function useElementOnScreen (options:any, containerRef: React.MutableRefObject<any>, intersectionOnce: boolean) {
 
     //STATES
     const [isVisible,setIsVisible] = useState<boolean>(false);
@@ -27,5 +27,3 @@ const useElementOnScreen = (options:any, containerRef: React.MutableRefObject<an
 
     return intersectionOnce ? { isVisible: freezeElement } : { isVisible: isVisible };
 }
-
-export default useElementOnScreen;

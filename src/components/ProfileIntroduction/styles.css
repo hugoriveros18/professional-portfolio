@@ -36,3 +36,40 @@
     transform: translateY(0px);
     opacity: 1;
 }
+
+@media screen and (min-width: 768px) {
+    .about-me__welcome-message {
+        max-width: 550px;
+        margin: 0 auto;
+    }
+
+    .about-me__welcome-message h3 {
+        font-size: 24px;
+    }
+
+    .about-me__welcome-message p {
+        font-size: 22px;
+        line-height: 1.8;
+    }
+
+    .about-me__container {
+        padding-bottom: 110px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .about-me__welcome-message {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .about-me__container {
+        padding-bottom: 150px;
+    }
+
+    .about-me__welcome-message p {
+        line-height: 2;
+    }
+}
+

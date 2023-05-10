@@ -256,3 +256,60 @@ button span:nth-child(4) {
         opacity: 1.9;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .starting-screen__welcome-text p {
+        max-width: 750px;
+        font-size: 45px;
+    }
+
+    .starting-screen__welcome-text {
+        padding-top: 100px;
+    }
+
+    .starting-screen__welcome-text {
+        height     : 30%;
+    }
+    .starting-screen__profile-picture {
+        height         : 43%;
+    }
+    .starting-screen__button-container {
+        height         : 24%;
+    }
+
+    .writing__animation {
+        font-size: 45px;
+        margin-left: 3px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .starting-screen__welcome-text p {
+        font-size: 60px;
+    }
+
+    .starting-screen__welcome-text {
+        padding-top: 60px;
+    }
+
+    .starting-screen__name-container h2 {
+        font-size: 20px;
+    }
+
+    .starting-screen__welcome-text {
+        height     : 29%;
+    }
+    .starting-screen__profile-picture {
+        height         : 45%;
+    }
+    .starting-screen__button-container {
+        height         : 23%;
+    }
+
+    .writing__animation {
+        font-size: 55px;
+    }
+}
+
+
+

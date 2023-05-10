@@ -1,0 +1,70 @@
+.myprojects__global-container {
+    width : 100%;
+    margin: 50px 0;
+}
+
+.myprojects__header-container h4 {
+    margin-bottom: 10px;
+    font-size    : 22px;
+    font-weight  : 600;
+    text-align   : center;
+    color        : var(--light-red-color);
+}
+
+.myprojects__header-container p {
+    text-align : center;
+    font-weight: 600;
+    font-size  : 17px;
+    padding    : 0px 24px;
+    color      : var(--dark-blue-color);
+}
+
+.myprojects__menu-container {
+    position  : relative;
+    width     : 100%;
+    display   : flex;
+    margin-top: 20px;
+    padding   : 0 15px;
+    list-style: none;
+    overflow-x: auto;
+}
+
+.myprojects__menu-container::-webkit-scrollbar {
+    height          : 10px;
+    background-color: #eee;
+}
+
+.myprojects__menu-container::-webkit-scrollbar-thumb {
+    height          : 5px;
+    background-color: #ae00ff;
+    border-radius   : 10px;
+}
+
+.myprojects__menu-container li {
+    padding    : 10px 25px;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.myprojects__menu-item--active {
+    font-weight     : 600;
+    color           : var(--light-red-color);
+}
+
+.myprojects__menu-background--animation {
+    position        : absolute;
+    top             : 0;
+    height          : 100%;
+    background-color: var(--light-color);
+    transition      : all 500ms ease;
+    z-index: 5;
+}
+
+.myprojects__menu-container--animation {
+    position        : absolute;
+    top             : 0;
+    height          : 5px;
+    background-color: var(--dark-blue-color);
+    transition      : all 500ms ease;
+    z-index: 6;
+}

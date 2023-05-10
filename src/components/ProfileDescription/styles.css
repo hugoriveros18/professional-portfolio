@@ -1,14 +1,14 @@
 .description-text {
-    display: flex;
-    text-align: start !important;
-    padding: 0 !important;
-    font-size: 15px !important;
+    display    : flex;
+    text-align : start !important;
+    padding    : 0 !important;
+    font-size  : 15px !important;
     font-weight: 400 !important;
-    transition: all 1200ms;
+    transition : all 1200ms;
 }
 
 .description-text::before {
-    content: "\2022";
+    content     : "\2022";
     margin-right: 10px;
 }
 
@@ -22,4 +22,10 @@
 
 .description-visible {
     transform: translateX(0%);
+}
+
+@media screen and (min-width: 768px) {
+    .description-text {
+        font-size: 18px !important;
+    }
 }
