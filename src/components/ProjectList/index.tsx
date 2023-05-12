@@ -25,7 +25,7 @@ export default function ProjectList({currentTab}:ProjectListProps) {
                             className={`projectsList__element`}
                             style={{backgroundImage: `url(${project.backgroundImage})`}}
                         >
-                            {/* <img src={project.backgroundImage}/> */}
+
                         </li>
                     )
                 })

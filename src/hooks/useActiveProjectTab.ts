@@ -5,7 +5,6 @@ import React, { useState, useMemo, useEffect } from "react";
 export default function useActiveProjectTab({
     allRef,
     reactRef,
-    vtexRef,
     vueRef,
     javascriptRef
 }:UseActiveProjectTabProps) {
@@ -20,8 +19,6 @@ export default function useActiveProjectTab({
                     return allRef.current.offsetLeft;
                 case 'react':
                     return reactRef.current.offsetLeft;
-                case 'vtex':
-                    return vtexRef.current.offsetLeft;
                 case 'vue':
                     return vueRef.current.offsetLeft;
                 case 'javascript':
@@ -44,8 +41,6 @@ export default function useActiveProjectTab({
                     return allRef.current.clientWidth;
                 case 'react':
                     return reactRef.current.clientWidth;
-                case 'vtex':
-                    return vtexRef.current.clientWidth;
                 case 'vue':
                     return vueRef.current.clientWidth;
                 case 'javascript':

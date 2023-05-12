@@ -5,6 +5,7 @@ import todoApp from '../assets/projects/todo-app.png';
 import ultimateCalculator from '../assets/projects/ultimate-calculator.png';
 import ipTracker from '../assets/projects/ip-tracker.png';
 import travelAgency from '../assets/projects/travel-agency.png';
+import weddingInvitation from '../assets/projects/nuestro-matrimonio.netlify.app_invitacion_adrian-cami.png';
 
 export const allProjects: Project[] = [
     {
@@ -61,6 +62,14 @@ export const allProjects: Project[] = [
         backgroundImage: travelAgency,
         webSite: 'https://hugoriveros18.github.io/travel-agency-landing-page/',
         githubRepository: 'https://github.com/hugoriveros18/travel-agency-landing-page',
+        language: 'react'
+    },
+    {
+        title: 'Wedding Invitation',
+        description: "Virtual invitation of my marriage with Angie.",
+        backgroundImage: weddingInvitation,
+        webSite: 'https://nuestro-matrimonio.netlify.app/invitacion/adrian-cami',
+        githubRepository: 'https://github.com/hugoriveros18/angie-hugo',
         language: 'react'
     },
 ]

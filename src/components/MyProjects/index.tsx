@@ -8,7 +8,6 @@ export default function MyProjects() {
     //REFERENCES
     const allRef = useRef<any>(null);
     const reactRef = useRef<any>(null);
-    const vtexRef = useRef<any>(null);
     const vueRef = useRef<any>(null);
     const javascriptRef = useRef<any>(null);
     
@@ -18,7 +17,7 @@ export default function MyProjects() {
         borderPosition,
         borderwidth,
         handleTabChange
-    } = useActiveProjectTab({allRef, reactRef, vtexRef, vueRef, javascriptRef})
+    } = useActiveProjectTab({allRef, reactRef, vueRef, javascriptRef})
 
     //JSX
     return(
@@ -43,13 +42,6 @@ export default function MyProjects() {
                     className={`${activeTab === 'react' ? 'myprojects__menu-item--active' : undefined}`}
                 >
                     REACT
-                </li>
-                <li 
-                    ref={vtexRef} 
-                    onClick={() => handleTabChange('vtex')}
-                    className={`${activeTab === 'vtex' ? 'myprojects__menu-item--active' : undefined}`}
-                >
-                    VTEX COMPONENTS
                 </li>
                 <li 
                     ref={vueRef} 

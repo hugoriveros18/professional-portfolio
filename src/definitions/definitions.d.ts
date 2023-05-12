@@ -7,7 +7,6 @@ type SkillBarGraphProps = {
 type UseActiveProjectTabProps = {
     allRef: any
     reactRef: any
-    vtexRef: any
     vueRef: any
     javascriptRef: any
 }
