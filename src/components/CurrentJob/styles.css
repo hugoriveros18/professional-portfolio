@@ -82,6 +82,13 @@
 
 @media screen and (min-width: 1024px) {
     .current-job__internal-container {
+        width: 80%;
         min-height: 764px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .current-job__internal-container {
+        width: 70%;
     }
 }
