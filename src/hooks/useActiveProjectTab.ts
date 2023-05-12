@@ -6,7 +6,8 @@ export default function useActiveProjectTab({
     allRef,
     reactRef,
     vtexRef,
-    vueRef
+    vueRef,
+    javascriptRef
 }:UseActiveProjectTabProps) {
     //STATES
     const [activeTab, setActiveTab] = useState<string>('');
@@ -23,6 +24,8 @@ export default function useActiveProjectTab({
                     return vtexRef.current.offsetLeft;
                 case 'vue':
                     return vueRef.current.offsetLeft;
+                case 'javascript':
+                    return javascriptRef.current.offsetLeft;
                 default:
                     return 0;
             }
@@ -45,6 +48,8 @@ export default function useActiveProjectTab({
                     return vtexRef.current.clientWidth;
                 case 'vue':
                     return vueRef.current.clientWidth;
+                case 'javascript':
+                    return javascriptRef.current.clientWidth;
                 default:
                     return 0;
             }

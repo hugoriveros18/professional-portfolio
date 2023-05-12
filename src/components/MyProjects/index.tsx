@@ -1,6 +1,7 @@
-import React, { useRef, useState, useMemo, useEffect } from "react";
+import { useRef } from "react";
 import './styles.css';
 import useActiveProjectTab from "../../hooks/useActiveProjectTab";
+import ProjectList from "../ProjectList";
 
 export default function MyProjects() {
 
@@ -9,6 +10,7 @@ export default function MyProjects() {
     const reactRef = useRef<any>(null);
     const vtexRef = useRef<any>(null);
     const vueRef = useRef<any>(null);
+    const javascriptRef = useRef<any>(null);
     
     //PROJECT TABS STATE
     const {
@@ -16,7 +18,7 @@ export default function MyProjects() {
         borderPosition,
         borderwidth,
         handleTabChange
-    } = useActiveProjectTab({allRef, reactRef, vtexRef, vueRef})
+    } = useActiveProjectTab({allRef, reactRef, vtexRef, vueRef, javascriptRef})
 
     //JSX
     return(
@@ -56,6 +58,13 @@ export default function MyProjects() {
                 >
                     VUE
                 </li>
+                <li 
+                    ref={javascriptRef} 
+                    onClick={() => handleTabChange('javascript')}
+                    className={`${activeTab === 'javascript' ? 'myprojects__menu-item--active' : undefined}`}
+                >
+                    JAVASCRIPT
+                </li>
                 <div 
                     className="myprojects__menu-container--animation"
                     style={{left: borderPosition, width: borderwidth}}
@@ -65,6 +74,8 @@ export default function MyProjects() {
                     style={{left: borderPosition, width: borderwidth}}
                 ></div>
             </ul>
+
+            <ProjectList currentTab={activeTab}/>            
 
         </div>
     )
