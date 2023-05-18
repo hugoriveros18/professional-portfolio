@@ -9,21 +9,95 @@
     list-style           : none;
 }
 
+.listElement__information {
+    position        : absolute;
+    right           : -100%;
+    top             : 0;
+    display         : flex;
+    flex-direction  : column;
+    justify-content : center;
+    align-items     : center;
+    gap: 25px;
+    width           : 100%;
+    height          : 100%;
+    padding         : 15px;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow        : hidden;
+}
+
+.listElement__information h4 {
+    font-size  : 20px;
+    font-weight: 700;
+    text-align : center;
+    color      : var(--light-blue-color);
+}
+
+.listElement__information p {
+    text-align: center;
+    color     : var(--light-color);
+}
+
+.listElement__information header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    transform: translateY(-400%);
+    transition: all 500ms;
+}
+
+.listElement__information footer {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    width: 100%;
+    padding: 0 20px;
+    transform: translateY(400%);
+    transition: all 500ms;
+}
+
+.listElement__information .header-footer__active {
+    transform: translateY(0px);
+}
+
+.listElement__information footer img {
+    width: 30px;
+}
+
+.information-active {
+    right: 0;
+}
+
+.projectsList__element-container {
+    position          : relative;
+    overflow          : hidden;
+    -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow   : 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow        : 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    border-radius     : 10px;
+}
+
 .projectsList__element {
     width              : 100%;
     height             : 250px;
     background-position: center;
     background-repeat  : no-repeat;
     background-size    : cover;
-    border-radius      : 10px;
-    -webkit-box-shadow : 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow    : 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
-    box-shadow         : 3px 3px 5px 0px rgba(0, 0, 0, 0.75);
+    overflow           : hidden;
+    cursor             : pointer;
 }
 
 .projectsList__element img {
     max-width: 100%;
 }
+
+.close-icon {
+    position: absolute;
+    top     : 12px;
+    right   : 12px;
+    width   : 22px;
+}
+
 
 @media screen and (min-width: 500px) {
     .projectsList__element {
@@ -35,10 +109,14 @@
 @media screen and (min-width: 1024px) {
     .projectsList__container {
         padding: 30px 0;
-        gap: 30px;
+        gap    : 30px;
     }
 
     .projectsList__element {
         max-width: 312px;
+    }
+
+    .close-icon {
+        display: none;
     }
 }

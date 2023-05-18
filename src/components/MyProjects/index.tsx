@@ -2,14 +2,20 @@ import { useRef } from "react";
 import './styles.css';
 import useActiveProjectTab from "../../hooks/useActiveProjectTab";
 import ProjectList from "../ProjectList";
+import useElementOnScreen from "../../hooks/useElementOnScreen";
+import { visibilityOptions } from "../../definitions/profileVariables";
 
 export default function MyProjects() {
 
     //REFERENCES
+    const headerRef = useRef<any>(null);
     const allRef = useRef<any>(null);
     const reactRef = useRef<any>(null);
     const vueRef = useRef<any>(null);
     const javascriptRef = useRef<any>(null);
+
+    //IS VISIBLE ON SCREEN
+    const { isVisible: isHeaderVisible } = useElementOnScreen(visibilityOptions, headerRef, true);
     
     //PROJECT TABS STATE
     const {
@@ -23,9 +29,13 @@ export default function MyProjects() {
     return(
         <div className={`myprojects__global-container`}>
 
-            <header className={`myprojects__header-container`}>
-                <h4>My Projects</h4>
-                <p>These are some of the personal projects I have worked on</p>
+            <header ref={headerRef} className={`myprojects__header-container`}>
+                <h4  className={`${isHeaderVisible ? 'title__visible' : undefined}`}>
+                    My Projects
+                </h4>
+                <p className={`${isHeaderVisible ? 'title__visible' : undefined}`}>
+                    These are some of the personal projects I have worked on
+                </p>
             </header>
 
             <ul className={`myprojects__menu-container`}>

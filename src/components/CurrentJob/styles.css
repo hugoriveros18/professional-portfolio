@@ -56,6 +56,10 @@
     list-style: none;
 }
 
+.current-job__functions li {
+    overflow: hidden;
+}
+
 @media screen and (min-width: 768px) {
     .current-job__internal-container {
         width: 60%;

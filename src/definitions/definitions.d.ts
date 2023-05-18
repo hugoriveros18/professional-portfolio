@@ -30,3 +30,9 @@ type ProjectListProps = {
     currentTab: string
 }
 
+type ProjectListElementProps = {
+    project: Project
+    projectInfoActive: string
+    setProjectInfoActive: React.Dispatch<React.SetStateAction<string>>
+}
+

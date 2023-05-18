@@ -20,8 +20,8 @@ export const allProjects: Project[] = [
         title: 'Sunnyside Agency',
         description: "General information of the services provided by the creative agency Sunnyside.",
         backgroundImage: sunnysideAgency,
-        webSite: 'https://hugoriveros18.github.io/time-tracking-dashboard/',
-        githubRepository: 'https://github.com/hugoriveros18/time-tracking-dashboard',
+        webSite: 'https://hugoriveros18.github.io/sunnyside-agency-landing-page/',
+        githubRepository: 'https://github.com/hugoriveros18/sunnyside-agency-landing-page',
         language: 'javascript'
     },
     {
