@@ -115,6 +115,10 @@
     .projectsList__element {
         max-width: 312px;
     }
+    
+    .projectsList__element-container {
+        max-width: 312px;
+    }
 
     .close-icon {
         display: none;

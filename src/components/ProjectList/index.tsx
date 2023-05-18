@@ -7,18 +7,18 @@ import './styles.css';
 
 export default function ProjectList({currentTab}:ProjectListProps) {
 
+    //STATES
+    const [projectInfoActive, setProjectInfoActive] = useState<string>('');
+    
     //ACTIVE PROJECTS
     const activeProjects = useMemo(() => {
+        setProjectInfoActive('');
         if(currentTab === "all") {
             return allProjects;
         }
 
         return allProjects.filter(project => project.language === currentTab);
     }, [currentTab])
-
-    //STATES
-    const [projectInfoActive, setProjectInfoActive] = useState<string>('');
-
 
     //JSX
     return (
