@@ -4,7 +4,7 @@
     padding    : 0 !important;
     font-size  : 15px !important;
     font-weight: 400 !important;
-    transition : all 1200ms;
+    transition : all 1000ms;
 }
 
 .description-text::before {

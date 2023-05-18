@@ -56,6 +56,8 @@ function ProjectListElement({project, projectInfoActive, setProjectInfoActive}: 
     return (
         <li 
             className={`projectsList__element-container`}
+            onMouseEnter={() => setProjectInfoActive(project.title)}
+            onMouseLeave={() => setProjectInfoActive('')}
         >
             <div 
                 className={`projectsList__element`}

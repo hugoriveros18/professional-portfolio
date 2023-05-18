@@ -1,0 +1,153 @@
+.footer-contact__container {
+    padding         : 45px 15px;
+    background-color: var(--dark-blue-color);
+    overflow: hidden;
+}
+
+.footer-contact__internal-container {
+    width: 100%;
+    transform: translateX(300%);
+}
+
+.internal-container__active {
+    animation: contactAnimation 1.2s forwards;
+}
+
+@keyframes contactAnimation {
+    0% {
+       transform: translateX(300%);
+       opacity: 0; 
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    90% {
+        transform: translateX(-10%);
+    }
+    
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.contact__title-container {
+    display       : flex;
+    flex-direction: column;
+    gap           : 15px;
+    width         : 100%;
+    max-width     : 500px;
+    margin        : 0 auto;
+    padding       : 0 15px;
+}
+
+.contact__title-container h4 {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    gap           : 4px;
+    width         : 100%;
+    text-align    : center;
+    font-size     : 28px;
+    font-weight   : 600;
+    color         : var(--light-red-color);
+}
+
+.contact__title-container h4::after {
+    display         : block;
+    content         : '';
+    width           : 65px;
+    height          : 1px;
+    background-color: var(--light-blue-color);
+}
+
+.contact__title-container p {
+    color      : var(--light-color);
+    text-align : center;
+    line-height: 1.5;
+}
+
+.contact__button-container {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+    padding        : 25px;
+}
+
+.send-email__button {
+    position       : relative;
+    font-size      : 17px;
+    text-transform : uppercase;
+    text-decoration: none;
+    padding        : 12px 30px;
+    display        : inline-block;
+    border-radius  : 5px;
+    transition     : all .2s;
+    border         : none;
+    font-family    : inherit;
+    font-weight    : 500;
+    background-color: var(--dark-blue-color);
+    color          : #e5acff;
+    border         : solid 1px #e5acff;
+}
+
+.send-email__button:hover {
+    transform       : translateY(-3px);
+    box-shadow      : 0 10px 20px rgba(255, 255, 255, 0.2);
+    background-color: #e5acff;
+    color           : var(--dark-blue-color);
+    font-weight     : 600;
+}
+
+.send-email__button:active {
+    transform       : translateY(-1px);
+    box-shadow      : 0 5px 10px rgba(255, 255, 255, 0.2);
+    background-color: #e5acff;
+}
+
+.send-email__button::after {
+    content      : "";
+    display      : inline-block;
+    height       : 100%;
+    width        : 100%;
+    border-radius: 5px;
+    position     : absolute;
+    top          : 0;
+    left         : 0;
+    z-index      : -1;
+    transition   : all .4s;
+}
+
+.send-email__button::after {
+    background-color: #fff;
+}
+
+.send-email__button:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity  : 0;
+}
+
+.contact__built {
+    width: 100%;
+}
+
+.contact__built p {
+    width         : 100%;
+    color         : var(--light-color);
+    text-align    : center;
+    font-size     : 12px;
+    line-height   : 1.5;
+    letter-spacing: 1px;
+}
+
+@media screen and (min-width: 768px) {
+    .contact__title-container h4 {
+        font-size: 30px;
+    }
+
+    .contact__title-container p {
+        font-size: 19px;
+    }
+}

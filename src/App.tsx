@@ -5,6 +5,7 @@ import SkillsResume from './components/SkillsResume';
 import CurrentJob from './components/CurrentJob';
 import './App.css';
 import MyProjects from './components/MyProjects';
+import Contact from './components/Contact';
 
 function App() {
 
@@ -36,8 +37,11 @@ function App() {
         <CurrentJob/>
       </div>
 
+      {/* CURRENT JOB */}
       <MyProjects />
 
+      {/* CONTACT */}
+      <Contact />
     </div>
   );
 }

@@ -1,0 +1,81 @@
+.social-media__container {
+    display       : flex;
+    flex-direction: column;
+    gap           : 8px;
+    margin        : 30px auto;
+}
+
+.social-media__row-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap           : 8px;
+    width  : 100%;
+}
+
+.social-media__icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90px;
+    height: 90px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 100ms linear;
+}
+
+.linkedIn {
+    border-radius: 90px 5px 5px 5px;
+}
+
+.linkedInActive {
+    background-color: #007EBB;
+    transform: scale(1.1);
+}
+
+.svg-linkedIn {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.instagram {
+    border-radius: 5px 90px 5px 5px;
+}
+
+.instagramActive {
+    background-color: #cc39a4;
+    transform: scale(1.1);
+}
+
+.svg-instagram {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.github {
+    border-radius: 5px 5px 5px 90px;
+}
+
+.githubActive {
+    background-color: #000000;
+    transform: scale(1.1);
+}
+
+.svg-github {
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.twitter {
+    border-radius: 5px 5px 90px 5px;
+}
+
+.twitterActive {
+    background-color: #03A9F4;
+    transform: scale(1.1);
+}
+
+.svg-twitter {
+    margin-bottom: 10px;
+    margin-right: 10px;
+}

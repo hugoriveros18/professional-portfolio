@@ -35,10 +35,28 @@ const visibilityOptions = {
     threshold: 0 //define el procentaje del elemento hijo que debe ser visible para que se ejecute la funcion callback
 }
 
+const visibilityOptionsProjects = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.1
+}
+
+const visibilityOptionsContact = {
+    root: null,
+    rootMargin: "0px",
+    threshold: 0.2
+}
+
 const jobFunctions = [
     "Design, plan and implement solutions that guarantee the success of assigned projects, making the necessary translation of the definitions of project design in code.",
     "Build the graphical interface of the websites and structure the contents in a semantic way controlling the fonts, templates, design forms, user experience, information maps, accessibility and interactivity.",
     "Interpret the business logic and needs of the client and/or consumer, developing all the components necessary and functional dynamics to integrate the graphical interface."
 ]
 
-export { profileSkills, visibilityOptions, jobFunctions };
+export {
+    profileSkills,
+    visibilityOptions,
+    visibilityOptionsProjects,
+    visibilityOptionsContact,
+    jobFunctions
+};

@@ -36,3 +36,7 @@ type ProjectListElementProps = {
     setProjectInfoActive: React.Dispatch<React.SetStateAction<string>>
 }
 
+type IconProps = {
+    activeButton: string
+}
+

@@ -8,6 +8,10 @@
 }
 
 .myprojects__header-container h4 {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    gap           : 5px;
     margin-bottom: 10px;
     font-size    : 22px;
     font-weight  : 600;
@@ -15,6 +19,14 @@
     color        : var(--light-red-color);
     transform: translateX(300%);
     transition: all 800ms;
+}
+
+.myprojects__header-container h4::after {
+    display         : block;
+    content         : '';
+    width           : 85px;
+    height          : 1px;
+    background-color: var(--medium-blue-color);
 }
 
 .myprojects__header-container p {
@@ -29,6 +41,21 @@
 
 .myprojects__header-container .title__visible {
     transform: translateX(0px);
+}
+
+.myprojects__list-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.myprojects__list--internal-container {
+    width: 100%;
+    transform: translateX(-300%);
+    transition: all 1.5s;
+}
+
+.myprojects__list--internal-container-visible {
+    transform: translateX(0%);
 }
 
 .myprojects__menu-container {
