@@ -3,7 +3,7 @@ import useElementOnScreen from "../../hooks/useElementOnScreen";
 import { visibilityOptions } from "../../definitions/profileVariables";
 import './styles.css';
 
-const ProfileIntroduction = forwardRef((props, ref: any) => {
+const ProfileIntroduction = () => {
 
     //REFERENCES
     const profileIntroductionRef = useRef<any>(null);
@@ -15,7 +15,6 @@ const ProfileIntroduction = forwardRef((props, ref: any) => {
     return (
         <div
             className={`about-me__container`}
-            ref={ref}
         >
             <div
                 className={`about-me__welcome-message`}
@@ -26,6 +25,6 @@ const ProfileIntroduction = forwardRef((props, ref: any) => {
             </div>
         </div>
     )
-});
+};
 
 export default ProfileIntroduction;

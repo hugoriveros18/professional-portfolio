@@ -85,6 +85,7 @@ function ProjectListElement({project, projectInfoActive, setProjectInfoActive}: 
                         <a href={project.webSite} target="_blank">
                             <img 
                                 src={externalLinkIcon}
+                                className={`external-link`}
                             />
                         </a>
                     }

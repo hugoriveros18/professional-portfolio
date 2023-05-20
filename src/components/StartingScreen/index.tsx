@@ -2,11 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import ProfilePicture from '../../assets/hugo-picture.png';
 import './styles.css';
 
-type StartingScreenProps = {
-    scrollToRef: () => void
-}
-
-const StartingScreen = ({scrollToRef}:StartingScreenProps) => {
+const StartingScreen = ({reference, scrollToRef}:StartingScreenProps) => {
 
     //STATES
     const [currentText, setCurrentText] = useState<string>('');
@@ -43,7 +39,7 @@ const StartingScreen = ({scrollToRef}:StartingScreenProps) => {
                 <p>{currentText}<span className={`writing__animation`}>|</span></p>
             </div>
             <div className={`starting-screen__button-container ${firstRender ? 'button-first-render' : 'button-inital-render'}`}>
-                <button onClick={scrollToRef}>
+                <button onClick={() => scrollToRef(reference)}>
                     <span></span>
                     <span></span>
                     <span></span>

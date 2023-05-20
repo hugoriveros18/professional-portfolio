@@ -123,4 +123,8 @@
     .close-icon {
         display: none;
     }
+
+    .listElement__information footer .external-link {
+        width: 28px;
+    }
 }
