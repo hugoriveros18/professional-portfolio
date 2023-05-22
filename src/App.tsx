@@ -46,18 +46,20 @@ function App() {
         />
 
       {/* MENU */}
-      <MenuNav setIsMenuActive={setIsMenuActive}/>
-      <MenuBar 
-        isMenuActive={isMenuActive}
-        profileRef={profileRef}
-        skillsRef={skillsRef}
-        jobRef={jobRef}
-        projectsRef={projectsRef}
-        contactRef={contactRef}
-        setIsMenuActive={setIsMenuActive}
-        scrollToRef={scrollToRef}
-        scrollToRefEnd={scrollToRefEnd}
-      />
+      <div className={`menus__full-container`}>
+        <MenuNav setIsMenuActive={setIsMenuActive}/>
+        <MenuBar 
+          isMenuActive={isMenuActive}
+          profileRef={profileRef}
+          skillsRef={skillsRef}
+          jobRef={jobRef}
+          projectsRef={projectsRef}
+          contactRef={contactRef}
+          setIsMenuActive={setIsMenuActive}
+          scrollToRef={scrollToRef}
+          scrollToRefEnd={scrollToRefEnd}
+        />
+      </div>
 
       {/* PROFILE INTRODUCTION */}
       <div ref={profileRef}>

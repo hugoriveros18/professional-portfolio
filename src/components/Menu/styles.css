@@ -123,4 +123,110 @@
     font-weight: 600;
     line-height: 1.5;
     color      : var(--light-color);
+    white-space: nowrap;
+}
+
+.item-list__menu-cv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.item-list__menu-cv a {
+    padding: 10px 25px;
+    color: var(--light-red-color);
+    text-decoration: none;
+    font-weight: 600;
+    border: solid 2px var(--light-red-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 200ms linear;
+}
+
+.item-list__menu-cv a:hover {
+    color: var(--light-color);
+    background-color: var(--light-red-color);
+}
+
+@media screen and (min-width: 1024px) {
+    .menu__container {
+        width: 30%;
+        border: none;
+    }
+
+    .menu__container img {
+        display: none;
+    }
+
+    .menu-bar__full-container {
+        position: sticky;
+        right: 0;
+        height: auto;
+    }
+
+    .menu-bar__internal-container {
+        position: relative;
+        right: unset;
+        top: unset;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 10px 15px 10px 0;
+    }
+
+    .menu-bar__close-icon {
+        display: none;
+    }
+
+    .menu-bar__items-list {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 30px;
+        width: auto;
+    }
+
+    .item-list__menu-cv {
+        margin: 0px 0px 0 10px;
+    }
+
+    .item-list__menu-element {
+        flex-direction: row;
+        gap: 6px;
+        cursor: pointer;
+    }
+
+    .item-list__menu-element:hover > h5 {
+        color: var(--light-red-color);
+    }
+
+    .item-list__menu-element h5 {
+        font-size: 16px;
+    }
+
+    .profile img {
+        width: 20px;
+    }
+    
+    .skills img {
+        width: 30px;
+    }
+    
+    .job img {
+        width: 27px;
+    }
+    
+    .projects img {
+        width: 32px;
+    }
+    
+    .contact img {
+        width: 30px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .menu-bar__internal-container {
+        padding-right: 40px;
+    }
 }

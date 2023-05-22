@@ -22,4 +22,13 @@
   .skills-job__box {
     width: 100%;
   }
+
+  .menus__full-container {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    border-bottom: solid 3px var(--light-red-color);
+    z-index: 999;
+  }
 }

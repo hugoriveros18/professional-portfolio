@@ -6,6 +6,7 @@ import SkillsIcon from '../../assets/skills-menu-icon.svg';
 import JobIcon from '../../assets/work-menu-icon.svg';
 import ProjectsIcon from '../../assets/project-menu-icon.svg';
 import ContactIcon from '../../assets/contact-menu-icon.svg';
+import Resume from '../../assets/files/cv-hugofeliperiverosfajardo.pdf';
 import './styles.css';
 
 export function MenuNav({setIsMenuActive}:MenuNavProps) {
@@ -105,6 +106,17 @@ export function MenuBar({
                     >
                         <img src={ContactIcon}/>
                         <h5>Contact</h5>
+                    </li>
+
+                    <li className={`item-list__menu-cv`}>
+                        <a 
+                            href={Resume}
+                            download="CV - Hugo Felipe Riveros Fajardo"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Resume
+                        </a>
                     </li>
 
                 </ul>
