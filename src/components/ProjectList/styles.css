@@ -135,4 +135,8 @@
     .listElement__information footer .external-link {
         width: 28px;
     }
+
+    .info-icon {
+        display: none;
+    }
 }
