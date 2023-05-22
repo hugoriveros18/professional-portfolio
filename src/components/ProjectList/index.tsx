@@ -3,6 +3,7 @@ import { allProjects } from "../../definitions/projectsVariables";
 import closeIcon from "../../assets/close-info-icon.svg";
 import githubIcon from "../../assets/github-info-icon.svg";
 import externalLinkIcon from "../../assets/external-link-icon.svg";
+import infoIcon from "../../assets/info-icon.svg";
 import './styles.css';
 
 export default function ProjectList({currentTab}:ProjectListProps) {
@@ -63,7 +64,15 @@ function ProjectListElement({project, projectInfoActive, setProjectInfoActive}: 
                 className={`projectsList__element`}
                 style={{backgroundImage: `url(${project.backgroundImage})`}}
                 onClick={() => setProjectInfoActive(project.title)}
-            />
+            >
+                {
+                   !isInformationActive &&
+                   <img 
+                       src={infoIcon}
+                       className={`info-icon`}
+                   />
+                }
+            </div>
             <div className={`listElement__information ${isInformationActive ? 'information-active' : undefined}`}>
                 <img 
                     src={closeIcon} 

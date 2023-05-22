@@ -98,6 +98,14 @@
     width   : 22px;
 }
 
+.info-icon {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 30px;
+    background-color: #fff;
+}
+
 
 @media screen and (min-width: 500px) {
     .projectsList__element {

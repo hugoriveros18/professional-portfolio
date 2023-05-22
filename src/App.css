@@ -10,6 +10,13 @@
   --light-red-color  : #e63946;
 }
 
+.menus__full-container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
 @media screen and (min-width: 1024px) {
   .skills-job__container {
     display   : flex;
@@ -24,11 +31,7 @@
   }
 
   .menus__full-container {
-    position: sticky;
-    top: 0;
-    left: 0;
     display: flex;
     border-bottom: solid 3px var(--light-red-color);
-    z-index: 999;
   }
 }
